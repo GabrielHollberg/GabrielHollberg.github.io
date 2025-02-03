@@ -9,7 +9,7 @@ height: 10vh;
 
 .progressBar {
     width: 20%;
-    height: 20%;
+    height: 10%;
     border-radius: 10px;
     border: black 2px solid;
 }
