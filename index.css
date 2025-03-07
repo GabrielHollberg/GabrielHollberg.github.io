@@ -1,16 +1,21 @@
 body {
     background-color: antiquewhite;
+    color: rgba(92,118,153,255);
+
 }
 
 header {
+    position: fixed;
     height: 5vh;
-    width: 98vw;
+    width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(128, 173, 240, 0.397);
+    background-color: rgba(92,118,153,255);
+    z-index: 10;
 }
 
 h1 {
+    padding: 8vh;
     text-align: center;
 }
 
@@ -22,7 +27,7 @@ p {
 
 a {
     text-decoration: none;
-    color: black;
+    color: antiquewhite;
 }
 
 .button {
@@ -35,8 +40,12 @@ a {
 }
 
 .goal {
-    width: 98vw;
+    width: 100%;
     height: 10vh;
+}
+
+.pageSpacer {
+    height: 80vh;
 }
 
 .progressBar {
@@ -53,12 +62,12 @@ a {
 
 #csProgress {
     width: 62%;
-    background-color: rgba(21, 0, 214, 0.589);
+    background-color: rgba(92,118,153,255);
 }
 
 #iosProgress {
     width: 10%;
-    background-color: rgba(21, 0, 214, 0.589);
+    background-color: rgba(92,118,153,255);
 }
 
 #navSpacer {
@@ -66,7 +75,13 @@ a {
 }
 
 #me {
-    width: 40vw;
+    width: 40vh;
     clip-path: circle(40% at 51% 35%);
     float: right;
+}
+
+#mountains {
+    padding-top: 10vh;
+    width: 100%;
+    clip-path: polygon(0 0, 70% 10%, 100% 100%, 20% 90%);
 }
