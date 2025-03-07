@@ -27,12 +27,13 @@ p {
 
 a {
     text-decoration: none;
-    color: antiquewhite;
+    color: rgba(92,118,153,255);
 }
 
 .button {
     width: 10vw;
     text-align: center;
+    color: antiquewhite;
 }
 
 .button:hover {
