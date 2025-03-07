@@ -83,5 +83,5 @@ a {
 
 #mountains {
     width: 100%;
-    clip-path: polygon(0 0, 70% 0%, 95% 100%, 20% 95%);
+    clip-path: polygon(5% 0, 72% 0%, 95% 100%, 20% 95%);
 }
