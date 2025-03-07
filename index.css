@@ -80,7 +80,6 @@ a {
     width: 40vh;
     float: right;
     clip-path: circle(40% at 51% 35%);
-    shape-outside: circle(40% at 51% 35%);
 }
 
 #mountains {
