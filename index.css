@@ -15,7 +15,7 @@ header {
 }
 
 h1 {
-    padding-top: 8vh;
+    padding-top: 12vh;
     text-align: center;
 }
 
@@ -76,9 +76,11 @@ a {
 }
 
 #me {
+    margin-right: 10vw;
     width: 40vh;
-    clip-path: circle(40% at 51% 35%);
     float: right;
+    clip-path: circle(40% at 51% 35%);
+    shape-outside: circle(40% at 51% 35%);
 }
 
 #mountains {
