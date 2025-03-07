@@ -1,7 +1,13 @@
 body {
     background-color: antiquewhite;
     color: rgba(92,118,153,255);
+    margin: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
+body::-webkit-scrollbar {
+    display: none;
 }
 
 header {
@@ -15,7 +21,7 @@ header {
 }
 
 h1 {
-    padding: 8vh;
+    padding-top: 8vh;
     text-align: center;
 }
 
@@ -82,7 +88,6 @@ a {
 }
 
 #mountains {
-    padding-top: 10vh;
     width: 100%;
-    clip-path: polygon(0 0, 70% 10%, 100% 100%, 20% 90%);
+    clip-path: polygon(0 0, 70% 0%, 95% 100%, 20% 95%);
 }
