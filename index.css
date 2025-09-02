@@ -1,22 +1,28 @@
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
     background-color: antiquewhite;
     color: rgba(92,118,153,255);
     margin: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 header {
     position: fixed;
-    height: 5vh;
+    height: 6vh;
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(92,118,153,255);
+    background-color: rgb(58, 35, 0);
     z-index: 10;
 }
 
 h1 {
-    padding-top: 8vh;
-    padding-bottom: 4vh;
     margin: 0;
     text-align: center;
 }
@@ -35,11 +41,11 @@ a {
 .button {
     width: 10vw;
     text-align: center;
-    color: antiquewhite;
+    color:rgb(255, 176, 58);
 }
 
 .button:hover {
-    font-weight: bold;
+    font-size: large;
     cursor: default;
 }
 
@@ -64,6 +70,14 @@ a {
     border-radius: 10px;
 }
 
+#homeSpacer {
+    height: 10vh;
+}
+
+#home {
+    color: rgb(58, 35, 0);
+}
+
 #csProgress {
     width: 83%;
     background-color: rgba(92,118,153,255);
@@ -86,6 +100,8 @@ a {
 }
 
 #mountains {
-    width: 100%;
-    clip-path: polygon(5% 0, 72% 0%, 95% 100%, 20% 95%);
+    z-index: -1;
+    position: absolute;
+    margin-top: 6vh;
+    height: 94vh;
 }
