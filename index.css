@@ -25,7 +25,6 @@ header {
 
 h1 {
     padding-top: 8vh;
-    margin: 0;
     text-align: center;
 }
 
@@ -81,7 +80,7 @@ a {
 }
 
 #home {
-    margin-top: -4vh;
+    margin-top: -10vh;
     color: rgba(4, 37, 66);
 }
 
