@@ -1,15 +1,8 @@
-html::-webkit-scrollbar, body::-webkit-scrollbar {
-  display: none;
-}
-
 body {
     background-color: antiquewhite;
     color: rgba(4, 37, 66);
     margin: auto;
     overflow-x: hidden;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
     overflow-y: hidden;
 }
 
