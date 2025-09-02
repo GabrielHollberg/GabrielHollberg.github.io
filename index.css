@@ -4,7 +4,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 
 body {
     background-color: antiquewhite;
-    color: rgba(92,118,153,255);
+    color: rgba(4, 37, 66);
     margin: auto;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -18,11 +18,13 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgb(58, 35, 0);
+    justify-content: space-between;
+    background-color: rgba(4, 37, 66, 0.9);
     z-index: 10;
 }
 
 h1 {
+    padding-top: 8vh;
     margin: 0;
     text-align: center;
 }
@@ -36,17 +38,21 @@ p {
 a {
     text-decoration: none;
     color: rgba(92,118,153,255);
+    cursor: default;
 }
 
 .button {
     width: 10vw;
     text-align: center;
-    color:rgb(255, 176, 58);
+    color:rgb(255, 255, 255);
 }
 
 .button:hover {
-    font-size: large;
-    cursor: default;
+    text-shadow: 0 0 5px white;
+}
+
+.navSpacer {
+    width: 5vw;
 }
 
 .goal {
@@ -55,14 +61,14 @@ a {
 }
 
 .pageSpacer {
-    height: 80vh;
+    height: 90vh;
 }
 
 .progressBar {
     width: 40%;
     height: 10%;
     border-radius: 10px;
-    border: black 2px solid;
+    border: rgba(4, 37, 66) 2px solid;
 }
 
 .progress {
@@ -75,7 +81,8 @@ a {
 }
 
 #home {
-    color: rgb(58, 35, 0);
+    margin-top: -4vh;
+    color: rgba(4, 37, 66);
 }
 
 #csProgress {
@@ -88,10 +95,6 @@ a {
     background-color: rgba(92,118,153,255);
 }
 
-#navSpacer {
-    width: 40vw;
-}
-
 #me {
     margin-right: 10vw;
     width: 40vh;
@@ -102,6 +105,5 @@ a {
 #mountains {
     z-index: -1;
     position: absolute;
-    margin-top: 6vh;
-    height: 94vh;
+    height: 100vh;
 }
