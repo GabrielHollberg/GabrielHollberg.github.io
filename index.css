@@ -29,6 +29,7 @@ p {
 }
 
 a {
+    height: 100%;
     text-decoration: none;
     color: rgba(92,118,153,255);
     cursor: default;
