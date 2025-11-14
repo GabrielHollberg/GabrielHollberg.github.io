@@ -115,10 +115,14 @@ header>a:hover {
 }
 
 #me {
-    width: 30vh;
+    width: 50vh;
     float: left;
     clip-path: circle(45%);
     shape-outside: circle(50%);
+}
+
+#me-container {
+    margin: 4vw;
 }
 
 #home {
@@ -190,6 +194,10 @@ header>a:hover {
         position: absolute;
         top: 30vh;
         right: 5vh;
+    }
+
+    #me {
+        width: 20vh;
     }
 
     #mobile-nav-spacer {
