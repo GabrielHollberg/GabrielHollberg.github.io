@@ -158,7 +158,7 @@ icon-box {
     }
 
     .icon {
-        width: 13vh;
+        width: 8vh;
         border-radius: 100px;
         background-color: white;
         box-shadow: 0 0 10px 5px white;
@@ -172,8 +172,8 @@ icon-box {
         justify-content: space-around;
         top: 5vh;
         right: 5vh;
-        width: 10vh;
-        height: 10vh;
+        width: 8vh;
+        height: 8vh;
         background-color: white;
         box-shadow: 0 0 10px 5px white;
     }
@@ -183,13 +183,13 @@ icon-box {
     }
 
     #icon-box {
-        width: 60vw;
+        height: 35vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         position: absolute;
-        top: 4vh;
-        left: 4vh;
+        top: 30vh;
+        right: 5vh;
     }
 
     .hamburger-lines {
