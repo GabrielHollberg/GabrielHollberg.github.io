@@ -83,23 +83,27 @@
 
         <script>
             function hamburgerFunction() {
-                var iconBox = document.getElementById("icon-box");
-                var burger = document.getElementById("hamburger");
-                var headers = document.getElementsByTagName("header");
-                var header = headers[0];
-                iconBox.style.display = "none";
-                burger.style.display = "none";
-                header.style.display = "flex";
+                if(window.innerWidth < window.innerHeight) {
+                    var iconBox = document.getElementById("icon-box");
+                    var burger = document.getElementById("hamburger");
+                    var headers = document.getElementsByTagName("header");
+                    var header = headers[0];
+                    iconBox.style.display = "none";
+                    burger.style.display = "none";
+                    header.style.display = "flex";
+                }
             }
 
             document.body.addEventListener('pointerup', function(event) {
-                var iconBox = document.getElementById("icon-box");
-                var burger = document.getElementById("hamburger");
-                var headers = document.getElementsByTagName("header");
-                var header = headers[0];
-                iconBox.style.display = "flex";
-                burger.style.display = "flex";
-                header.style.display = "none";
+                if(window.innerWidth < window.innerHeight) {
+                    var iconBox = document.getElementById("icon-box");
+                    var burger = document.getElementById("hamburger");
+                    var headers = document.getElementsByTagName("header");
+                    var header = headers[0];
+                    iconBox.style.display = "flex";
+                    burger.style.display = "flex";
+                    header.style.display = "none";
+                }
             });
         </script>
     </body>
