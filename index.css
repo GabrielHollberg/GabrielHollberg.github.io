@@ -192,6 +192,10 @@ header>a:hover {
         right: 5vh;
     }
 
+    #mobile-nav-spacer {
+        width: 50vw;
+    }
+
     .hamburger-lines {
         background-color: rgba(4, 37, 66, 0.9);
         width: 100%;
