@@ -3,8 +3,7 @@ body {
     color: rgba(4, 37, 66);
     margin: 0;
     padding: 0;
-    overflow-x:hidden;
-    overflow-y: hidden;
+    scroll-snap-type: y mandatory;
 }
 
 footer {
@@ -34,6 +33,7 @@ h1 {
     padding-top: 8vh;
     text-align: center;
     font-size: 3em;
+    scroll-snap-align: start;
 }
 
 p {
@@ -67,12 +67,8 @@ header>a {
     cursor: default;
 }
 
-header>a:hoverw {
+header>a:hover {
     text-shadow: 0 0 5px white;
-}
-
-.navSpacer {
-    width: 5vw;
 }
 
 .goal {
@@ -105,25 +101,107 @@ header>a:hoverw {
     background-color: rgba(92,118,153,255);
 }
 
+#hamburger {
+    display: none;
+}
+
+icon-box {
+    display: none;
+}
+
 #iosProgress {
     width: 10%;
     background-color: rgba(92,118,153,255);
 }
 
 #me {
-    margin-left: 5vw;
-    width: 40vh;
+    width: 30vh;
     float: left;
-    clip-path: circle(33% at 51% 32%);
-    shape-outside: circle(35% at 63% 32%);
+    clip-path: circle(45%);
+    shape-outside: circle(50%);
 }
 
 #home {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     display: block;
     margin: 0;
     padding: 0;
+}
+
+@media (orientation: portrait) {
+
+    h1 {
+        font-size: 2em;
+        text-align: left;
+        margin-left: 8vw;
+    }
+
+    header {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        row-gap: 10px;
+        display: none;
+        height:fit-content;
+        align-items:center;
+        text-align: center;
+    }
+
+    header>a {
+        height: 10vh;
+        width: 50vw;
+    }
+
+    .icon {
+        width: 13vh;
+        border-radius: 100px;
+        background-color: white;
+        box-shadow: 0 0 10px 5px white;
+    }
+
+    #hamburger {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        top: 5vh;
+        right: 5vh;
+        width: 10vh;
+        height: 10vh;
+        background-color: white;
+        box-shadow: 0 0 10px 5px white;
+    }
+
+    #hamburger:hover > header {
+        display: block;
+    }
+
+    #icon-box {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 4vh;
+        left: 4vh;
+    }
+
+    .hamburger-lines {
+        background-color: rgba(4, 37, 66, 0.9);
+        width: 100%;
+        height: 15%;
+        border-radius: 120px;
+    }
+
+    p {
+        font-size: 1.5em;
+        text-align:left;
+    }
+
 }

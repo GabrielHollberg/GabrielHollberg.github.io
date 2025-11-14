@@ -2,12 +2,12 @@
 <html>
     <head>
         <title>My Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="/index.css">
     </head>
     <body>
         <img id="home" src="/images/mountains.jpeg">
         <header>
-            <div class="navSpacer"></div>
             <a href="#home">Home</a>
             <a href="#myGoals">Focus</a>
             <a href="#myThoughts">Thoughts</a>
@@ -17,9 +17,20 @@
             <a href="https://books.soundstorm.dev" target="_blank">Audiobooks</a>
             <a href="#aboutMe">About Me</a>
             <a href="https://github.com/GabrielHollberg" target="_blank">Github</a>
-            <div class="navSpacer"></div>
+            <div style="width: 50vw;"></div>
         </header>
-        <h1 id="myGoals">My Focus</h1>
+        <div id="icon-box">
+            <a href="https://music.soundstorm.dev" target="_blank"><img src="/images/compact-disc-solid-full.svg" class="icon"></a>
+            <a href="https://books.soundstorm.dev" target="_blank"><img src="/images/book-solid-full.svg" class="icon"></a>
+            <a href="https://movies.soundstorm.dev" target="_blank"><img src="/images/film-solid-full.svg" class="icon"></a>
+        </div>
+        <div id="hamburger" onclick="hamburgerFunction()">
+            <div class="hamburger-lines"></div>
+            <div class="hamburger-lines"></div>
+            <div class="hamburger-lines"></div>
+            <div class="hamburger-lines"></div>
+        </div>
+        <h1 id="myGoals">Focus</h1>
         <ul>
         <div class="goal">
             <p>CS Bachelor's Degree (97/117)</p>
@@ -37,12 +48,12 @@
         </div>
         </ul>
         <div class="pageSpacer"></div>
-        <h1 id="myThoughts">My Thoughts</h1>
+        <h1 id="myThoughts">Thoughts</h1>
         <ul>
         <p><a href="/thoughts/vfg.html">Vision, Focus, and Goals</a></p>
         </ul>
         <div class="pageSpacer"></div>
-        <h1 id="myProjects">My Projects</h1>
+        <h1 id="myProjects">Projects</h1>
         <ul>
             <p><a href="https://movies.soundstorm.dev" target="_blank">Movies</a></p>
             <p><a href="https://music.soundstorm.dev" target="_blank">Music</a></p>
@@ -69,5 +80,27 @@
             <p>gabehollberg@gmail.com</p>
             <div class="navSpacer"></div>
         </footer>
+
+        <script>
+            function hamburgerFunction() {
+                var iconBox = document.getElementById("icon-box");
+                var burger = document.getElementById("hamburger");
+                var headers = document.getElementsByTagName("header");
+                var header = headers[0];
+                iconBox.style.display = "none";
+                burger.style.display = "none";
+                header.style.display = "flex";
+            }
+
+            document.body.addEventListener('pointerup', function(event) {
+                var iconBox = document.getElementById("icon-box");
+                var burger = document.getElementById("hamburger");
+                var headers = document.getElementsByTagName("header");
+                var header = headers[0];
+                iconBox.style.display = "flex";
+                burger.style.display = "flex";
+                header.style.display = "none";
+            });
+        </script>
     </body>
 </html>
