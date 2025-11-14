@@ -1,13 +1,24 @@
 body {
     background-color: antiquewhite;
     color: rgba(4, 37, 66);
-    margin: auto;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    bottom: 0;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(4, 37, 66, 0.9);
+    color:rgb(255, 255, 255);
+    z-index: 10;
 }
 
 header {
     position: fixed;
+    top: 0;
     height: 6vh;
     width: 100%;
     display: flex;
@@ -20,12 +31,20 @@ header {
 h1 {
     padding-top: 8vh;
     text-align: center;
+    font-size: 3em;
 }
 
 p {
-    font-size: large;
-    font-style: italic;
+    margin:auto;
+    width: 80vw;
+    font-family: Arial;
+    text-align: justify;
+    font-size: 2em;
     font-weight: bold;
+}
+
+footer>p {
+    width: auto;
 }
 
 a {
@@ -46,7 +65,7 @@ header>a {
     cursor: default;
 }
 
-header>a:hover {
+header>a:hoverw {
     text-shadow: 0 0 5px white;
 }
 
@@ -75,13 +94,8 @@ header>a:hover {
     border-radius: 10px;
 }
 
-#homeSpacer {
+.spacer {
     height: 10vh;
-}
-
-#home {
-    margin-top: -10vh;
-    color: rgba(4, 37, 66);
 }
 
 #csProgress {
@@ -95,14 +109,19 @@ header>a:hover {
 }
 
 #me {
-    margin-right: 10vw;
+    margin-left: 5vw;
     width: 40vh;
-    float: right;
-    clip-path: circle(40% at 51% 35%);
+    float: left;
+    clip-path: circle(33% at 51% 32%);
+    shape-outside: circle(35% at 63% 32%);
 }
 
-#mountains {
-    z-index: -1;
-    position: absolute;
+#home {
     height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
