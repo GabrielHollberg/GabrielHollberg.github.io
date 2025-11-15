@@ -12,9 +12,6 @@
             <a href="#myGoals">Focus</a>
             <a href="#myThoughts">Thoughts</a>
             <a href="#myProjects">Projects</a>
-            <a href="https://movies.soundstorm.dev" target="_blank">Movies</a>
-            <a href="https://music.soundstorm.dev" target="_blank">Music</a>
-            <a href="https://books.soundstorm.dev" target="_blank">Audiobooks</a>
             <a href="#aboutMe">About Me</a>
             <a href="https://github.com/GabrielHollberg" target="_blank">Github</a>
             <div id="mobile-nav-spacer"></div>
@@ -95,7 +92,7 @@
             }
 
             window.onclick = function(event) {
-                if (!event.target.closest('#header') && !event.target.closest('#hamburger')) {
+                if (!event.target.closest('#header') && !event.target.closest('#hamburger') && innerWidth < innerHeight) {
                     var iconBox = document.getElementById("icon-box");
                     var burger = document.getElementById("hamburger");
                     var headers = document.getElementsByTagName("header");

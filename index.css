@@ -1,3 +1,7 @@
+a {
+    cursor: default;
+}
+
 body {
     background-color: antiquewhite;
     color: rgba(4, 37, 66);
@@ -24,7 +28,7 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgba(4, 37, 66, 0.9);
     z-index: 10;
 }
@@ -76,6 +80,13 @@ header>a:hover {
     height: 10vh;
 }
 
+.icon {
+    width: 6vh;
+    border-radius: 100px;
+    background-color: white;
+    box-shadow: 0 0 10px 5px white;
+}
+
 .pageSpacer {
     height: 90vh;
 }
@@ -106,7 +117,13 @@ header>a:hover {
 }
 
 #icon-box {
-    display: none;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 10vh;
+    right: 40vw;
 }
 
 #iosProgress {
@@ -123,6 +140,10 @@ header>a:hover {
 
 #me-container {
     margin: 4vw;
+}
+
+#mobile-nav-spacer {
+    display: none;
 }
 
 #home {
@@ -187,6 +208,7 @@ header>a:hover {
 
     #icon-box {
         height: 30vh;
+        width:min-content;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -206,7 +228,7 @@ header>a:hover {
     .hamburger-lines {
         background-color: rgba(4, 37, 66, 0.9);
         width: 100%;
-        height: 15%;
+        height: 16%;
         border-radius: 120px;
     }
 
