@@ -160,7 +160,12 @@ header>a:hover {
 }
 
 #me-container {
-    margin: -5vh;
+    margin: -7vh;
+}
+
+#me-paragraph {
+    padding-top: 10vh;
+    padding-bottom: 8vh;
 }
 
 #mobile-nav-spacer {
@@ -206,7 +211,6 @@ header>a:hover {
     h1 {
         font-size: 2em;
         text-align: left;
-        margin-left: 8vw;
     }
 
     header {
@@ -267,7 +271,22 @@ header>a:hover {
     }
 
     #me {
-        width: 20vh;
+        width: 25vh;
+        float: left;
+        clip-path: circle(45%);
+        shape-outside: circle(50%);
+    }
+
+    #me-container {
+        margin: 0vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #me-paragraph {
+        padding-top: 4vh;
+        text-align: center;
     }
 
     #quote-line1 {
