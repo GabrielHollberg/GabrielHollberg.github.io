@@ -196,6 +196,10 @@ header>a:hover {
         width: 50vw;
     }
 
+    .goal {
+        width: 100%;
+    }
+
     .icon {
         width: 6vh;
         border-radius: 100px;
