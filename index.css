@@ -149,7 +149,6 @@ header>a:hover {
         flex-direction: row;
         flex-wrap:wrap;
         justify-content: space-around;
-        row-gap: 10px;
         display: none;
         height:fit-content;
         align-items:center;
@@ -162,7 +161,7 @@ header>a:hover {
     }
 
     .icon {
-        width: 8vh;
+        width: 6vh;
         border-radius: 100px;
         background-color: white;
         box-shadow: 0 0 10px 5px white;
@@ -176,8 +175,8 @@ header>a:hover {
         justify-content: space-around;
         top: 5vh;
         right: 5vh;
-        width: 8vh;
-        height: 8vh;
+        width: 4vh;
+        height: 4vh;
         background-color: white;
         box-shadow: 0 0 10px 5px white;
     }
@@ -187,13 +186,13 @@ header>a:hover {
     }
 
     #icon-box {
-        height: 35vh;
+        height: 30vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         position: absolute;
-        top: 30vh;
-        right: 5vh;
+        top: 15vh;
+        right: 4vh;
     }
 
     #me {
