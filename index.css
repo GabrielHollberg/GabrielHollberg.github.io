@@ -1,5 +1,7 @@
 a {
     cursor: default;
+    text-decoration: none;
+    color: rgba(4, 37, 66, 0.9);
 }
 
 body {
@@ -53,11 +55,6 @@ footer>p {
     width: auto;
 }
 
-a {
-    text-decoration: none;
-    color: rgba(4, 37, 66, 0.9);
-}
-
 header>a {
     display: flex;
     width: 10vw;
@@ -76,8 +73,19 @@ header>a:hover {
 }
 
 .goal {
-    width: 100%;
+    width: 50%;
     height: 10vh;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.goal>p {
+    text-align: center;
+    width: 100%;
 }
 
 .icon {
@@ -92,7 +100,7 @@ header>a:hover {
 }
 
 .progressBar {
-    width: 40%;
+    width: 80%;
     height: 10%;
     border-radius: 10px;
     border: rgba(4, 37, 66) 2px solid;
@@ -110,6 +118,13 @@ header>a:hover {
 #csProgress {
     width: 83%;
     background-color: rgba(92,118,153,255);
+}
+
+#goal-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
 }
 
 #hamburger {
