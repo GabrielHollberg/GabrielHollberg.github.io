@@ -5,6 +5,9 @@ a {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: antiquewhite;
     color: rgba(4, 37, 66);
     margin: 0;
@@ -44,7 +47,6 @@ h1 {
 
 p {
     margin:auto;
-    width: 80vw;
     font-family: Arial;
     text-align: justify;
     font-size: 2em;
@@ -70,6 +72,10 @@ header>a {
 
 header>a:hover {
     text-shadow: 0 0 5px white;
+}
+
+.content-container {
+    width: 80%;
 }
 
 .goal {
@@ -147,18 +153,42 @@ header>a:hover {
 }
 
 #me {
-    width: 50vh;
+    width: 49vh;
     float: left;
     clip-path: circle(45%);
     shape-outside: circle(50%);
 }
 
 #me-container {
-    margin: 4vw;
+    margin: -5vh;
 }
 
 #mobile-nav-spacer {
     display: none;
+}
+
+#quote-line1 {
+    position:absolute;
+    top: 70vh;
+    left: 20vw;
+    color: white;
+    text-shadow: black 2px 2px 3px;
+}
+
+#quote-line2 {
+    position:absolute;
+    top: 75vh;
+    left: 45vw;
+    color: white;
+    text-shadow: black 2px 2px 3px;
+}
+
+#quote-line3 {
+    position:absolute;
+    top: 80vh;
+    left: 65vw;
+    color: white;
+    text-shadow: black 2px 2px 3px;
 }
 
 #home {
@@ -180,11 +210,9 @@ header>a:hover {
     }
 
     header {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
         flex-direction: row;
         flex-wrap:wrap;
-        justify-content: space-around;
+        justify-content:space-around;
         display: none;
         height:fit-content;
         align-items:center;
@@ -193,7 +221,7 @@ header>a:hover {
 
     header>a {
         height: 10vh;
-        width: 50vw;
+        width: 33%;
     }
 
     .goal {
@@ -242,6 +270,32 @@ header>a:hover {
 
     #mobile-nav-spacer {
         width: 50vw;
+    }
+
+    #quote-line1 {
+        position:absolute;
+        top: 70vh;
+        left: 5vw;
+        color: white;
+        text-shadow: black 2px 2px 3px;
+        font-size: large;
+    }
+
+    #quote-line2 {
+        position:absolute;
+        top: 75vh;
+        left: 10vw;
+        color: white;
+        text-shadow: black 2px 2px 3px;
+    }
+
+    #quote-line3 {
+        position:absolute;
+        top: 81vh;
+        left: 40vw;
+        color: white;
+        text-shadow: black 2px 2px 3px;
+        font-size: large;
     }
 
     .hamburger-lines {
