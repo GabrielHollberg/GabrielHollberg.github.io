@@ -137,7 +137,7 @@ header>a:hover {
     display: none;
 }
 
-#icon-box {
+.icon-box {
     width: 20%;
     display: flex;
     flex-direction: row;
@@ -206,6 +206,12 @@ header>a:hover {
     padding: 0;
 }
 
+#other-sites {
+    left: 2vw;
+    flex-direction: column;
+    height: 25vh;
+}
+
 @media (orientation: portrait) {
 
     h1 {
@@ -259,7 +265,7 @@ header>a:hover {
         display: block;
     }
 
-    #icon-box {
+    .icon-box {
         height: 30vh;
         width: 4vh;
         display: flex;
@@ -287,6 +293,10 @@ header>a:hover {
     #me-paragraph {
         padding-top: 4vh;
         text-align: center;
+    }
+
+    #other-sites {
+        top: 2vh;
     }
 
     #quote-line1 {
