@@ -25,6 +25,7 @@
             <a href="https://chess.com" target="_blank"><img src="/images/chess-pawn.svg" class="icon" style="background-color: rgb(110, 54, 31);"></a>
             <a href="https://robinhood.com" target="_blank"><img src="/images/stock-chart.svg" class="icon" style="background-color: rgb(204, 255, 62);"></a>
             <a href="https://americafirst.com" target="_blank"><img src="/images/dollar-sign.svg" class="icon" style="background-color: rgb(26, 58, 95);"></a>
+            <a href="https://my.wgu.edu" target="_blank"><img src="/images/owl.svg" class="icon" style="background-color: white;"></a>
         </div>
         <div id="hamburger" onclick="hamburgerFunction()">
             <div class="hamburger-lines"></div>
@@ -90,11 +91,13 @@
         <script>
             function hamburgerFunction() {
                 if(window.innerWidth < window.innerHeight) {
-                    var iconBox = document.getElementById("icon-box");
+                    var iconBox = document.getElementsByClassName("icon-box");
                     var burger = document.getElementById("hamburger");
                     var headers = document.getElementsByTagName("header");
                     var header = headers[0];
-                    iconBox.style.display = "none";
+                    for (var i = 0; i < iconBox.length; i++) {
+                        iconBox[i].style.display = "none";
+                    }
                     burger.style.display = "none";
                     header.style.display = "flex";
                 }
@@ -102,11 +105,13 @@
 
             window.onclick = function(event) {
                 if (!event.target.closest('#header') && !event.target.closest('#hamburger') && innerWidth < innerHeight) {
-                    var iconBox = document.getElementById("icon-box");
+                    var iconBox = document.getElementsByClassName("icon-box");
                     var burger = document.getElementById("hamburger");
                     var headers = document.getElementsByTagName("header");
                     var header = headers[0];
-                    iconBox.style.display = "flex";
+                    for (var i = 0; i < iconBox.length; i++) {
+                        iconBox[i].style.display = "flex";
+                    }
                     burger.style.display = "flex";
                     header.style.display = "none";
                 }
