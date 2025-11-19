@@ -207,9 +207,9 @@
     }
 
     #other-sites {
-        left: 2vw;
+        left: 3vw;
         flex-direction: column;
-        height: 35vh;
+        height: 50vh;
     }
 
 @media (orientation: portrait) {
@@ -296,7 +296,8 @@
     }
 
     #other-sites {
-        top: 2vh;
+        left: 8vw;
+        top: 4vh;
     }
 
     #quote-line1 {
