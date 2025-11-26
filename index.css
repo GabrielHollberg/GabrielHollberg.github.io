@@ -209,7 +209,9 @@
     #other-sites {
         left: 2vw;
         flex-direction: column;
+        flex-wrap: wrap;
         height: 50vh;
+        width: 50vw;
     }
 
 @media (orientation: portrait) {
