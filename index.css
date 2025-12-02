@@ -212,7 +212,7 @@
         flex-direction: column;
         flex-wrap: wrap;
         height: 50vh;
-        width: 50vw;
+        width: 30vw;
     }
 
 @media (orientation: portrait) {
