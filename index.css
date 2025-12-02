@@ -1,4 +1,5 @@
     a {
+        width: fit-content;
         cursor: default;
         text-decoration: none;
         color: rgba(4, 37, 66, 0.9);
