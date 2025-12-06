@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="/index.css">
+    </head>
+    <body>
+        <header>
+            <a href="#home">Home</a>
+            <a href="#myGoals">Focus</a>
+            <a href="#myThoughts">Thoughts</a>
+            <a href="#myProjects">Projects</a>
+            <a href="#aboutMe">About Me</a>
+            <a href="https://github.com/GabrielHollberg" target="_blank">Github</a>
+            <div id="mobile-nav-spacer"></div>
+        </header>
+        <div id="hamburger" onclick="hamburgerFunction()">
+            <div class="hamburger-lines"></div>
+            <div class="hamburger-lines"></div>
+            <div class="hamburger-lines"></div>
+            <div class="hamburger-lines"></div>
+        </div>
+
+        <h1>December 4, 2025</h1>
+        <div class="content-container">
+
+        <p>
+
+            Just sitting here at the same old stop again listening to Vance Joy.
+            Scratch that, It's actually Stubborn Love by The Illumineers.<br><br>
+            Anyway, I've got a few minutes before I can scan one of the packages
+            at this stop so here I am at the keyboard again. This is good practice
+            anyway though since I learned to type in Dvorak recently and I'm working
+            on getting better at it. It really is holding me back a little at this
+            point since I can only type like 30 words per minute, but I am getting
+            better and I'll keep you updated with my speed. It's actually pretty
+            funny cause I struggle to type normally now, but I don't know, maybe
+            if I tested my normal typing speed it would still be better. Mostly
+            at this point I've just messed up my regular typing to learn Dvorak,
+            but I think it'll be cool when I'm typing faster in Dvorak than I was
+            normally anyway.<br><br>
+            Anyway, my time is pretty much up at this point. Maybe I'll just type
+            out some of my desired focuses real quick. And at some point I'll type about my
+            opinion of having focuses instead of goals.<br><br>
+            Focus #1<br><br>
+            Finish WGU Software Engineering class<br><br>
+            Focus #2<br><br>
+            Finish another WGU class<br><br>
+            Focus #3<br><br>
+            Workout everyday<br><br>
+            Focus #4<br><br>
+            Go to the temple weekly<br><br>
+            By the way these aren't necessarily things I am doing perfectly they are
+            the things I would like to be doing perfectly. And how better to start
+            then by writing them down right?
+        
+        </p>
+
+        </div>
+
+        <script>
+            function hamburgerFunction() {
+                if(window.innerWidth < window.innerHeight) {
+                    var iconBox = document.getElementsByClassName("icon-box");
+                    var burger = document.getElementById("hamburger");
+                    var headers = document.getElementsByTagName("header");
+                    var header = headers[0];
+                    for (var i = 0; i < iconBox.length; i++) {
+                        iconBox[i].style.display = "none";
+                    }
+                    burger.style.display = "none";
+                    header.style.display = "flex";
+                }
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.closest('#header') && !event.target.closest('#hamburger') && innerWidth < innerHeight) {
+                    var iconBox = document.getElementsByClassName("icon-box");
+                    var burger = document.getElementById("hamburger");
+                    var headers = document.getElementsByTagName("header");
+                    var header = headers[0];
+                    for (var i = 0; i < iconBox.length; i++) {
+                        iconBox[i].style.display = "flex";
+                    }
+                    burger.style.display = "flex";
+                    header.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>

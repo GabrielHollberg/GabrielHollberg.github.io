@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="/index.css">
+    </head>
+    <body>
+        <header>
+            <a href="#home">Home</a>
+            <a href="#myGoals">Focus</a>
+            <a href="#myThoughts">Thoughts</a>
+            <a href="#myProjects">Projects</a>
+            <a href="#aboutMe">About Me</a>
+            <a href="https://github.com/GabrielHollberg" target="_blank">Github</a>
+            <div id="mobile-nav-spacer"></div>
+        </header>
+        <div id="hamburger" onclick="hamburgerFunction()">
+            <div class="hamburger-lines"></div>
+            <div class="hamburger-lines"></div>
+            <div class="hamburger-lines"></div>
+            <div class="hamburger-lines"></div>
+        </div>
+
+        <h1>December 4, 2025</h1>
+        <div class="content-container">
+
+        <p>This is the content. antosh aoteuh thus athes toe usta e usnto
+            u asote usa oeut aoseu so eut ase ua eos uaose us aoetua oeus
+            aeoasut asoet uas oeu asoe tuatoe uaose utsaoe u<br><br>
+            Okay, looking good. Sorry I had to make sure this looked at least decent.<br><br>
+            Anyway, I guess the purpose of this is to write down my thoughts for a sort of journal.
+            This way if I happen to have any incredible ideas I might end up looking back at this
+            and actually making them a reality. It will also be a nice place to write when I'm bored
+            at a stop for work (like right now).<br><br>
+            In other words, don't expect anything insane in here. If I do happen to write anything
+            truly amazing in here, hopefully I write it again somewhere else where people will
+            actually read it.<br><br>
+            Anyway, these thoughts may be longer or shorter depending on the day and may get
+            cut off more often than not when I have to go. When this happens I won't
+            probably attempt to finish the thought another day, instead I'll just start writing
+            on a new page and possibly continue the thought there.
+        </p>
+
+        </div>
+
+        <script>
+            function hamburgerFunction() {
+                if(window.innerWidth < window.innerHeight) {
+                    var iconBox = document.getElementsByClassName("icon-box");
+                    var burger = document.getElementById("hamburger");
+                    var headers = document.getElementsByTagName("header");
+                    var header = headers[0];
+                    for (var i = 0; i < iconBox.length; i++) {
+                        iconBox[i].style.display = "none";
+                    }
+                    burger.style.display = "none";
+                    header.style.display = "flex";
+                }
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.closest('#header') && !event.target.closest('#hamburger') && innerWidth < innerHeight) {
+                    var iconBox = document.getElementsByClassName("icon-box");
+                    var burger = document.getElementById("hamburger");
+                    var headers = document.getElementsByTagName("header");
+                    var header = headers[0];
+                    for (var i = 0; i < iconBox.length; i++) {
+                        iconBox[i].style.display = "flex";
+                    }
+                    burger.style.display = "flex";
+                    header.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
