@@ -102,6 +102,8 @@
         border-radius: 100px;
         background-color: white;
         box-shadow: 3px 3px 0px 2px black;
+        margin-bottom: 1.5vh;
+        margin-right: 2vh;
     }
 
     .pageSpacer {
@@ -213,8 +215,8 @@
         left: 2vw;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 50vh;
-        width: 30vw;
+        height: 56vh;
+        width: fit-content;
     }
 
 @media (orientation: portrait) {
