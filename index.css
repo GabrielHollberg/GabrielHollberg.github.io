@@ -127,7 +127,7 @@
     }
 
     #csProgress {
-        width: 83%;
+        width: 90%;
         background-color: rgba(92,118,153,255);
     }
 
@@ -153,7 +153,7 @@
     }
 
     #iosProgress {
-        width: 10%;
+        width: 18%;
         background-color: rgba(92,118,153,255);
     }
 
