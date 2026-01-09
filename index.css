@@ -144,6 +144,7 @@
         position: absolute;
         top: 22vh;
         border-radius: 50px;
+        border: none;
     }
 
     #hamburger {
