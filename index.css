@@ -142,10 +142,7 @@
         position: absolute;
         top: 22vh;
         height: 40vh;
-    }
-
-    #google-tasks {
-        position: absolute;
+        border-radius: 20px;
     }
 
     #hamburger {
