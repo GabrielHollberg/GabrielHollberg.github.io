@@ -138,8 +138,8 @@
 
     #google-calendar {
         position: absolute;
-        top: 22vh;
-        height: 40vh;
+        top: 23vh;
+        height: 50vh;
         border-radius: 20px;
     }
 
@@ -184,7 +184,7 @@
 
     #quote-line1 {
         position:absolute;
-        top: 70vh;
+        top: 80vh;
         left: 20vw;
         color: white;
         text-shadow: black 2px 2px 3px;
@@ -192,7 +192,7 @@
 
     #quote-line2 {
         position:absolute;
-        top: 75vh;
+        top: 85vh;
         left: 45vw;
         color: white;
         text-shadow: black 2px 2px 3px;
@@ -200,7 +200,7 @@
 
     #quote-line3 {
         position:absolute;
-        top: 80vh;
+        top: 90vh;
         left: 65vw;
         color: white;
         text-shadow: black 2px 2px 3px;
