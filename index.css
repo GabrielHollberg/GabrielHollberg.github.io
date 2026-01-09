@@ -140,6 +140,8 @@
 
     #google-calendar {
         position: absolute;
+        top: 23vh;
+        height: 40vh;
     }
 
     #hamburger {
