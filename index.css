@@ -139,12 +139,7 @@
     }
 
     #google-calendar {
-        height: 40vh;
-        width: 50vw;
         position: absolute;
-        top: 22vh;
-        border-radius: 50px;
-        border: none;
     }
 
     #hamburger {
