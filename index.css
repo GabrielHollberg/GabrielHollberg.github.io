@@ -222,7 +222,7 @@
 
     #soundstorm-sites {
         right: 2vw;
-        width: 23%;
+        width: fit-content;
     }
 
 @media (orientation: portrait) {
@@ -311,10 +311,6 @@
     #other-sites {
         left: 8vw;
         top: 4vh;
-    }
-
-    #soundstorm-sites {
-        width: 10%;
     }
 
     #quote-line1 {
