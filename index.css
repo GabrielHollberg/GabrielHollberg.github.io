@@ -220,6 +220,11 @@
         width: 30%;
     }
 
+    #soundstorm-sites {
+        right: 2vw;
+        width: 23%;
+    }
+
 @media (orientation: portrait) {
 
     h1 {
