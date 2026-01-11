@@ -149,7 +149,7 @@
         width: 20%;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content: flex-start;
         position: absolute;
         top: 10vh;
         right: 40vw;
@@ -216,10 +216,8 @@
 
     #other-sites {
         left: 2vw;
-        flex-direction: column;
         flex-wrap: wrap;
-        height: 56vh;
-        width: fit-content;
+        width: 30%;
     }
 
 @media (orientation: portrait) {
@@ -280,7 +278,6 @@
         width: 4vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
         flex-wrap: wrap;
         position: absolute;
         top: 15vh;
