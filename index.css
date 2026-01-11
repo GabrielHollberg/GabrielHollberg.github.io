@@ -257,6 +257,10 @@
         box-shadow: 3px 3px 0px 2px black;
     }
 
+    #google-calendar {
+        display: none;
+    }
+
     #hamburger {
         position: fixed;
         display: flex;
