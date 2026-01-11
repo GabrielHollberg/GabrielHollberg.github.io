@@ -313,6 +313,10 @@
         top: 4vh;
     }
 
+    #soundstorm-sites {
+        width: 10%;
+    }
+
     #quote-line1 {
         position:absolute;
         top: 70vh;
