@@ -105,8 +105,8 @@
     }
 
     .icon-link {
-        margin-right: 2vw;
-        margin-bottom: 2vw;
+        margin-right: 2vh;
+        margin-bottom: 2vh;
     }
 
     .pageSpacer {
@@ -217,7 +217,6 @@
     #other-sites {
         left: 2vw;
         flex-wrap: wrap;
-        width: 30%;
     }
 
     #soundstorm-sites {
@@ -279,8 +278,8 @@
     }
 
     .icon-box {
-        height: 30vh;
-        width: 4vh;
+        height: 50vh;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -309,8 +308,8 @@
     }
 
     #other-sites {
-        left: 8vw;
-        top: 4vh;
+        left: 2vh;
+        top: 2vh;
     }
 
     #quote-line1 {
